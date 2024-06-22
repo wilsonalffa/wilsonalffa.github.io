@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> FORMULÁRIO </title>
+		<style>
+			ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #333;
+			}
+
+			li {
+			  float: left;
+			}
+
+			li a {
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+			  background-color: #111;
+			}
+
+			.active {
+			  background-color: #04AA6D;
+			}
+		</style>
+</head>
+	<body style="background-color:#A9A9A9;">
+
+		<ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="tabela.html">Tabela</a></li>
+		  <li><a href="formulario.html">Formulário</a></li>
+		  <li><a href="lista.html">Lista</a></li>
+		  <li><a href="videos.html">Vídeos</a></li>
+		  <li style="float:right"><a class="active" href="desenvolvedores.html">Desenvolvedores</a></li>
+		</ul>
+
+	<form action="" method="POST" name="formPessoa"> 
+
+			<b><br /><br />Olá, seja bem-vindo, este é um formlário para entrega de um trablho de PW, por favor preencha e nos avalie.</b><br /><br />
+			<b>Muito obrigado.</b><br /><br />
+			
+			Nome completo: 			<input type="text"  name="Nome" size="35"><br /><br />
+			Seu curso:    			<input type="text"  name="Email" size="30"><br /><br />
+			Você trabalha?          <input type="RADIO" name="Trabalha" value="S">Sim, mas não na área do curso.
+									<input type="RADIO" name="Trabalha" value="S no curso">Sim, na área do curso.
+									<input type="RADIO" name="Trabalha" value="N">Não.<br /><br />
+				
+			Qual time você torce?          			<input type="checkbox" name="time" value="C">Corinthians
+									<input type="checkbox" name="time" value="CC">CORINTHIANS
+									<input type="checkbox" name="time" value="CCC">Timão
+									<input type="checkbox" name="time" value="CCCC">CORINGÃO<br /><br />
+
+			Qual o seu hobby preferido? <select  name="Hobby">
+											<option value="Livros">Ler livros
+											<option value="Música">Ouvir música
+											<option value="Cinema">Assistir filmes
+											<option value="Esporte">Praticar esportes
+											<option value="Video-game">Jogar video-game
+											<option value="Viajar">Viajar
+										</select><br /><br />
+			Caso tenha outro hobby, escreva aqui: 			<input type="text"  name="Nome" size="35"><br /><br />
+			
+			Deixe sua aviliação do formulário:          	<input type="RADIO" name="avaliação" value="MT">Muito Ruim
+															<input type="RADIO" name="avaliação" value="R">Ruim
+															<input type="RADIO" name="avaliação" value="B">Bom
+															<input type="RADIO" name="avaliação" value="MB">Muito bom
+															<input type="RADIO" name="avaliação" value="C">Tamo junto, AQUI É CORINTHIANS<br /><br />
+			Observações gerais:<br>
+                              <textarea name="Observação" rows="5" cols="60"></textarea><br /> <br />
+ <hr>
+ <p align = "center">
+ <input type="submit" value="Enviar os dados">
+ <input type="reset"  value="Limpar os dados"> </p>
+ <hr />
+	</form>
+	</body>
+</html>
